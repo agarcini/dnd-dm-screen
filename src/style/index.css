@@ -1,14 +1,27 @@
-html, body {
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html,
+body {
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
-	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-	color: #444;
+	background: #fafafa;
+	font-family: "Roboto", arial, sans-serif;
+	color: #333;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	font-size: 1.25em;
+	line-height: 1;
+	font-weight: 900;
+	margin: 0;
 }
 
 * {

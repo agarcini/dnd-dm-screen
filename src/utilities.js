@@ -1,6 +1,12 @@
-const transitionSettings = `
-0.2s ease
-`
+const transitionArray = [
+	"border",
+	"transform",
+	"box-shadow",
+	"background-color",
+	"border-radius",
+]
+const transitionSettings = `0.333s ease`
+
 const createTransitionRules = (currentRule, index, ruleArray) => {
 	let transition = `${currentRule} ${transitionSettings}`
 	if (index !== ruleArray.length - 1) {
@@ -10,6 +16,6 @@ const createTransitionRules = (currentRule, index, ruleArray) => {
 }
 
 export const createTransitions = (
-	transitionArray,
+	tArray = transitionArray,
 	transitionSettings = transitionSettings
-) => transitionArray.map(createTransitionRules)
+) => tArray.map(createTransitionRules)
